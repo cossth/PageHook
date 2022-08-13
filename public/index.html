@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="rows">
+      <label for="hook_url">Hook URL</label>
+      <input autofocus tabindex="0" type="text" class="input form_el" id="hook_url" placeholder="Input URL here" />
+    </div>  
+    <div class="rows">
+      <label for="hook_url">Allowed Hosts</label>
+      <textarea tabindex="1" type="text" class="input form_el" id="allowed_hosts" placeholder="List of allowed Hosts (WIP might not work)"></textarea>
+    </div>
+    <button tabindex="2" class="form_el btn" id="save">Save</button>
+    <p id="errorBox" class="hidden"></p>
+  </div>
+</body>
+
+</html>

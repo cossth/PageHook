@@ -1,0 +1,66 @@
+:root{
+  --bg: #f6f5ff;
+  --error: #7d3a1d;
+  --secondary: #0C1821;
+  --primary: #1B2A41;
+  --primary2: #324A5F;
+  --padding-base: 12px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--primary);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  user-select: none;
+}
+.rows{
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  padding: var(--padding-base);
+  flex-direction: column;
+  margin: 0 auto;
+  gap: var(--padding-base);
+}
+label {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.form_el{
+  border-radius: 4px;
+  padding: 0px 8px;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+.input {
+  border: 1px solid var(--primary2);
+  background: var(--primary);
+  color: var(--bg);
+}
+.input:focus {
+  outline: 1px dashed var(--primary2);
+}
+.btn {
+  cursor: pointer;
+  background: var(--secondary);
+  border: none;
+  color: var(--bg);
+}
+.btn:focus {
+  outline: 1px dashed var(--primary2);
+}
+#errorBox{
+  margin: 0;
+  padding: 1rem 2ch;
+  color: var(--error);
+  font-size: 1rem;
+  border-left: 2px solid var(--error);
+}
+#errorBox.hidden{
+  display : none;
+}

@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
   "version": "1.0.0",
   "name": "Page Hook",
@@ -29,11 +28,6 @@
     },
     "default_popup": "index.html"
   },
-  "web_accessible_resources": [
-    {
-      "resources": ["*"]
-    }
-  ],
   "permissions": ["tabs", "storage"],
   "host_permissions": ["*://*/*"]
 }
