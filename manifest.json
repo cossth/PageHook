@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "contentScript.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Chrome Webhook Extension",
+    "default_icon": {
+        "16": "img/logo.png",
+        "24": "img/logo.png",
+        "32": "img/logo.png"
+    },
+    "default_popup": "index.html"
+  }
+}
